@@ -1,0 +1,97 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #37a39a;
+  overflow: hidden; 
+}
+
+#gameCanvasContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+#gameCanvas {
+  max-width: 100%;
+  border: 1px solid #000;
+}
+
+#directionButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+
+
+#gameOverScreen {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#restartButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  border: none;
+cursor: pointer;
+color: azure;
+
+}
+
+#scoreDisplay {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+@media (max-width: 600px) {
+  #directionButtons {
+    
+    display: none;
+    
+  }
+
+  .h1 {
+    display: none;
+  }
+.button-container {
+  display: none;
+}
+}
